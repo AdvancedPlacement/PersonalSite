@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Projects - Jason W</title>
+    <style>
+        body {
+            background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
+            color: #e8e4dc;
+            font-family: "Iowan Old Style", Palatino, serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        nav {
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background: rgba(10, 10, 12, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            align-items: center;
+            font: 400 14px "Helvetica Neue", sans-serif;
+        }
+
+        nav a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        nav a.active {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .img-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .img-placeholder {
+            background: rgba(0, 0, 0, 0.3);
+            height: 200px;
+            border: 1px dashed #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .deco-orb {
+            position: fixed;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="deco-orb" style="width:300px; height:300px; top:10%; left:10%; background:#c4a35a;"></div>
+    <div class="deco-orb" style="width:250px; height:250px; bottom:10%; right:10%; background:#648cff;"></div>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <div class="project-card">
+            <h2>Luxium</h2>
+            <p>Randomly Generated Map, Roguelike Upgrade Mechanics.</p>
+            <div class="img-grid">
+                <img src="Images/Luxium1.png" alt="Luxium 1" class="project-img">
+                <img src="Images/Luxium2.png" alt="Luxium 2" class="project-img">
+            </div>
+            <p>This was a cooperative project with my friends over one summer during my Junior year of college. It was a
+                really fun group project and we all learned a lot about unity and game development. It was a bullet hell
+                of sorts, with the player running through waves of enemies, like butterflies and fireballs, each with
+                their own patterns and attacks. There was also a random upgrade system, the player getting stronger and
+                stronger and earning a high score at the end of their run.</p>
+        </div>
+
+        <div class="project-card">
+            <h2>Breadboard Bop it!</h2>
+            <p>Ever wanted to make a bop-it from a breadboard?</p>
+            <div class="img-grid">
+                <img src="Images/Arduino1.png" alt="Arduino 1" class="project-img">
+                <img src="Images/Arduino2.png" alt="Arduino 2" class="project-img">
+            </div>
+        </div>
+        <div class="project-card">
+            <h2>Mage Rhythm!</h2>
+            <p>A fun side project I did to learn Flask. A rhythm game in the browser to cast spells.</p>
+            <div class="img-grid">
+                <img src="Images/Mage.gif" alt="Mage 1" class="project-img">
+                <p>Had some fun features, like a lock out so players couldn't spam spacebar. A main menu from which to
+                    choose various options & find the mage's own spellbook to cast spells with. </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>FM24 Graphing and Data</h2>
+            <p>Various projects including Bungeeball (basketball sim) and FM24 transfer analysis graphing sheets.</p>
+            <img src="Images/fm4.png" alt="FM24 Image 1" class="project-img">
+            <img src="Images/fm1.png" alt="FM24 Image 2" class="project-img">
+            <img src="Images/bungee.png" alt="Bungeeball Image" class="project-img">
+
+        </div>
+
+        <div class="project-card">
+            <h2>Mind Kingdom</h2>
+            <p>A personal to-do list application built using Flutter/Dart.</p>
+            <div class="img-grid">
+                <img src="Images/MindKingdom1.png" alt="Mind Kingdom Image 1" class="project-img">
+                <img src="Images/MindKingdom2.png" alt="Mind Kingdom Image 2" class="project-img">
+                <p>This was my junior project, where me and my team developed a cross-platform to-do list application.
+                    It worked on most any resolution and had a number of really helpful features! Amongst those not
+                    listed in the images, there was a 'raid' system, where if the user missed a few tasks they wanted to
+                    complete, their village would end up burned down, reducing their population and showing visually the
+                    consequences of their actions. There was also a streak function, task difficulty & stats page that
+                    would break down a few stats for the user.</p>
+                <img src="Images/MindKingdom3.png" alt="Mind Kingdom Image 3" class="project-img2">
+            </div>
+        </div>
+        <div class="project-card">
+            <h2>Silly 2k Sheet</h2>
+            <p>A personal sheet used for helping myself in 2k rebuilds & for fun basketball projects..</p>
+            <div class="img-grid">
+                <img src="Images/Sheet1.png" alt="Sheet 1" class="project-img">
+                <img src="Images/Sheet2.png" alt="Sheet 2" class="project-img2">
+                <img src="Images/Sheet3.png" alt="Sheet 3" class="project-img">
+
+                <p>A fun side project I work on, basically just spiffing up a sheet to help give me more immersion and
+                    detail in my 2k games. Outputting prospect attributse into graphs to visualize their skills better,
+                    highlighting player attributes, point totals by color, etc.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <h2>SBA</h2>
+            <p>Simulation Basketball!</p>
+            <div class="img-grid">
+                <img src="Images/Basket1.png" alt="SBA 1" class="project-img">
+                <p>This was my senior project at Oregon Tech. It involved creating a simulation of basketball gameplay,
+                    with
+                    play by play and even AI commentary postgame! Pulled the AI comms since I don't want random people
+                    using
+                    my old external AI account for that anymore. But it was a very fun project and also a lesson in
+                    scope,
+                    not putting too much on the plate at once. I couldn't make an entire season simulater with trades
+                    and
+                    drafts in the few months I had, but the realistic output and UI using Python for the first time was
+                    fun.
+                </p>
+                <img src="Images/Basket2.png" alt="SBA 2" class="project-img2">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

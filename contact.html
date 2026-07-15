@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Jason W</title>
+    <style>
+        body {
+            background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
+            color: #e8e4dc;
+            font-family: "Iowan Old Style", Palatino, serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background: rgba(10, 10, 12, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            align-items: center;
+            font: 400 14px "Helvetica Neue", sans-serif;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        nav a.active {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Contact Content */
+        .container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            z-index: 5;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        /* Orbs - Fixed to background */
+        .deco-orb {
+            position: fixed;
+            z-index: 1;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.25;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="deco-orb" style="width:300px; height:300px; top:15%; left:20%; background:#50c878;"></div>
+    <div class="deco-orb" style="width:350px; height:350px; bottom:15%; right:20%; background:#e86482;"></div>
+    <div class="deco-orb" style="width:250px; height:250px; top:40%; left:60%; background:#9664ff;"></div>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>Whether it's data science, software development or anything else, feel free to reach out!</p>
+        <div>
+            <a href="mailto:jfrostwells@gmail.com" style="color:#c4a35a; font-size:1.5rem;">jfrostwells@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
