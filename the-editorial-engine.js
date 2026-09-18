@@ -89,6 +89,15 @@ var orbs = orbDefs.map((d) => ({
   dragStartOrbY: 0,
   el: createOrbEl(d.color)
 }));
+var elOrbToggle = document.getElementById("orbToggle");
+elOrbToggle.addEventListener("click", () => {
+  const allPaused = orbs.every((o) => o.paused);
+  for (const o of orbs) {
+    o.paused = !allPaused;
+    o.el.classList.toggle("paused", o.paused);
+  }
+  elOrbToggle.textContent = allPaused ? "Pause Orbs" : "Resume Orbs";
+});
 await document.fonts.ready;
 var preparedBody = prepareWithSegments(BODY_TEXT, BODY_FONT);
 var PQ_FONT = `italic 19px ${HEADLINE_FONT_FAMILY}`;

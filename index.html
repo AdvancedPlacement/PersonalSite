@@ -15,6 +15,7 @@
         }
 
         html,
+
         body {
             background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
             color: #e8e4dc;
@@ -128,7 +129,7 @@
             color: #b8a070;
         }
 
-        /* --- Stats Bar (Cleaned up) --- */
+
         #stats-bar {
             position: fixed;
             bottom: 0;
@@ -179,13 +180,20 @@
     <div id="stage"></div>
 
     <div id="stats-bar">
-        <div class="stat"><span id="sLines" class="stat-value">0</span><span class="stat-label">Lines</span></div>
-        <div class="stat"><span id="sReflow" class="stat-value">0ms</span><span class="stat-label">Reflow</span></div>
-        <div class="stat"><span id="sFps" class="stat-value">60</span><span class="stat-label">FPS</span></div>
-        <div class="stat"><span id="sCols" class="stat-value">0</span><span class="stat-label">Cols</span></div>
-    </div>
+        <div id="stats-bar">
+            <button id="orbToggle"
+                style="background:none;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);font:400 11px/1 'SF Mono',Menlo,monospace;text-transform:uppercase;letter-spacing:0.5px;padding:6px 10px;border-radius:4px;cursor:pointer;">Pause
+                Orbs</button>
+            <div class="stat"><span id="sLines" class="stat-value">0</span><span class="stat-label">Lines</span></div>
+            <div class="stat"><span id="sLines" class="stat-value">0</span><span class="stat-label">Lines</span></div>
+            <div class="stat"><span id="sReflow" class="stat-value">0ms</span><span class="stat-label">Reflow</span>
+            </div>
+            <div class="stat"><span id="sFps" class="stat-value">60</span><span class="stat-label">FPS</span></div>
+            <div class="stat"><span id="sCols" class="stat-value">0</span><span class="stat-label">Cols</span></div>
 
-    <script type="module" src="./the-editorial-engine.js"></script>
+        </div>
+
+        <script type="module" src="./the-editorial-engine.js"></script>
 </body>
 
 </html>
